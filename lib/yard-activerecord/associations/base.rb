@@ -12,7 +12,6 @@ module YARD::Handlers::Ruby::ActiveRecord::Associations
       object.group     = group_name
       object.docstring = return_description
       object.docstring.add_tag get_tag(:return, '', class_name)
-      object.docstring.add_tag get_tag(:see, 'http://api.rubyonrails.org/classes/ActiveRecord/Associations/ClassMethods.html')
       object.dynamic = true
       register object
     end

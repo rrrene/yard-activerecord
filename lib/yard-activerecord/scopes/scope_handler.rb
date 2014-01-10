@@ -9,8 +9,6 @@ module YARD::Handlers::Ruby::ActiveRecord::Scopes
       object = YARD::CodeObjects::MethodObject.new(namespace, method_name, :class)
       object.docstring = return_description
       object.docstring.add_tag get_tag(:return, '', class_name)
-      object.docstring.add_tag get_tag(:see,
-'http://api.rubyonrails.org/classes/ActiveRecord/NamedScope/ClassMethods.html')
       register object
     end
     
